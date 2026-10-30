@@ -86,7 +86,7 @@
   --ring: oklch(0.8 0.16 70);
   --chart-1: oklch(0.8 0.16 70); --chart-2: oklch(0.72 0.12 195); --chart-3: oklch(0.68 0.2 25); --chart-4: oklch(0.8 0.1 140); --chart-5: oklch(0.7 0.1 300);
   --sidebar: oklch(0.15 0.01 250); --sidebar-foreground: oklch(0.96 0.01 90); --sidebar-primary: oklch(0.8 0.16 70); --sidebar-primary-foreground: oklch(0.15 0.02 60); --sidebar-accent: oklch(0.22 0.015 250); --sidebar-accent-foreground: oklch(0.96 0.01 90); --sidebar-border: oklch(1 0 0 / 10%); --sidebar-ring: oklch(0.8 0.16 70);
-  --gradient-brand: linear-gradient(120deg, var(--primary), var(--accent) 50%, var(--secondary));
+  --gradient-brand: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary), var(--primary));
   --shadow-glow: 0 0 40px -6px color-mix(in oklab, var(--primary) 70%, transparent);
 }
 
