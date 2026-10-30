@@ -27,7 +27,7 @@ function Skill({ s, i }: { s: (typeof S)[number]; i: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true });
   const [n, setN] = useState(0);
-  useEffect(() => { if (inView) { const c = animate(0, s.v, { duration: 1.6, delay: i * 0.1, onUpdate: (v) => setN(Math.round(v)) }); return () => c.stop(); } }, [inView, s.v, i]);
+  useEffect(() => { if (inView) { const c = animate(0, s.v, { duration: 1.6, delay: i * 0.1, onUpdate: (v) => setN(Math.round(v)) }); return () => c.stop(); } return undefined; }, [inView, s.v, i]);
   return (
     <motion.div ref={ref} initial={{ opacity: 0, scale: 0.8 }} animate={inView ? { opacity: 1, scale: 1 } : {}} transition={{ delay: i * 0.1 }} className="glass rounded-3xl p-6">
       <div className="mb-4 flex items-center gap-4">

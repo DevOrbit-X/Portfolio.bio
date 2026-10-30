@@ -1,7 +1,8 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useState, type ReactNode } from "react";
-import { Menu, X, Github, Linkedin, Instagram, Youtube, Twitter } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { FaGithub as Github, FaLinkedin as Linkedin, FaInstagram as Instagram, FaYoutube as Youtube, FaXTwitter as Twitter } from "react-icons/fa6";
 import { Particles } from "./Particles";
 
 const NAV = [

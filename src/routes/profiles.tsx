@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Code, Github, Terminal, Trophy, Award } from "lucide-react";
+import { Code, Terminal, Trophy, Award } from "lucide-react";
+import { FaGithub as Github } from "react-icons/fa6";
 import { PageTitle } from "@/components/Shell";
 
 export const Route = createFileRoute("/profiles")({
