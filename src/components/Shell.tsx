@@ -51,7 +51,7 @@ export function Shell({ children }: { children: ReactNode }) {
       <Particles />
       <header className="fixed inset-x-0 top-0 z-40 px-4 py-4">
         <nav className="glass mx-auto flex max-w-6xl items-center justify-between rounded-full px-5 py-2.5">
-          <Link to="/" className="font-display text-lg font-extrabold text-gradient">GOKUL.</Link>
+          <Link to="/" className="font-display text-lg font-extrabold text-gradient">GOVARDHAN&nbsp;P.</Link>
           <ul className="hidden gap-1 lg:flex">
             {NAV.map((n) => (
               <li key={n.to} className="relative">
@@ -82,7 +82,10 @@ export function Shell({ children }: { children: ReactNode }) {
         {children}
       </motion.main>
       <footer className="relative mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-border px-5 py-8 sm:flex-row">
-        <p className="text-sm text-muted-foreground">© 2026 Gokul. Crafted with motion.</p>
+        <p className="text-sm text-muted-foreground">
+          © 2026 Govardhan P. ·{" "}
+          <a href="mailto:govardhanchemist@gmail.com" className="underline-offset-4 transition-colors hover:text-primary hover:underline">govardhanchemist@gmail.com</a>
+        </p>
         <SocialLinks />
       </footer>
     </div>
