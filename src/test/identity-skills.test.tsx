@@ -13,7 +13,7 @@ const metaText = (route: unknown) =>
 describe("Portfolio identity", () => {
   it("names the pages after Govardhan P, not the old placeholder name", () => {
     expect(metaText(HomeRoute)).toContain("Govardhan P");
-    expect(metaText(IndexRoute)).toContain("Govardhan P");
+    expect(metaText(SkillsRoute)).toContain("Govardhan P");
     expect(metaText(HomeRoute)).not.toContain("Gokul");
   });
 });
