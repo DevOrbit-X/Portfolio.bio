@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { lazy, Suspense } from "react";
 import { ArrowRight, Trophy, Rocket, Users } from "lucide-react";
 import { SocialLinks } from "@/components/Shell";
+import { ProfileAvatar } from "@/components/ProfileAvatar";
 
 const HeroScene = lazy(() => import("@/components/HeroScene"));
 
@@ -48,8 +49,13 @@ function Index() {
             <SocialLinks />
           </motion.div>
         </div>
-        <div className="h-[380px] sm:h-[520px]">
-          <ClientOnly fallback={null}><Suspense fallback={null}><HeroScene /></Suspense></ClientOnly>
+        <div className="relative h-[380px] sm:h-[520px]">
+          <div className="absolute inset-0">
+            <ClientOnly fallback={null}><Suspense fallback={null}><HeroScene /></Suspense></ClientOnly>
+          </div>
+          <div className="relative grid h-full place-items-center">
+            <ProfileAvatar className="h-56 w-56 sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
+          </div>
         </div>
       </section>
 
