@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { Route as IndexRoute, SKILLS } from "@/routes/skills";
+import { Route as SkillsRoute, SKILLS } from "@/routes/skills";
 import { Route as HomeRoute } from "@/routes/index";
 
 type HeadRoute = {
