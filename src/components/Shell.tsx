@@ -4,6 +4,7 @@ import { useState, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
 import { FaGithub as Github, FaLinkedin as Linkedin, FaInstagram as Instagram, FaYoutube as Youtube, FaXTwitter as Twitter } from "react-icons/fa6";
 import { Particles } from "./Particles";
+import { ProfileAvatar } from "./ProfileAvatar";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -51,7 +52,10 @@ export function Shell({ children }: { children: ReactNode }) {
       <Particles />
       <header className="fixed inset-x-0 top-0 z-40 px-4 py-4">
         <nav className="glass mx-auto flex max-w-6xl items-center justify-between rounded-full px-5 py-2.5">
-          <Link to="/" className="font-display text-lg font-extrabold text-gradient">GOVARDHAN&nbsp;P.</Link>
+          <Link to="/" className="flex items-center gap-2.5">
+            <ProfileAvatar className="h-8 w-8" glow={false} float={false} />
+            <span className="font-display text-lg font-extrabold text-gradient">GOVARDHAN&nbsp;P.</span>
+          </Link>
           <ul className="hidden gap-1 lg:flex">
             {NAV.map((n) => (
               <li key={n.to} className="relative">
@@ -82,10 +86,13 @@ export function Shell({ children }: { children: ReactNode }) {
         {children}
       </motion.main>
       <footer className="relative mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-border px-5 py-8 sm:flex-row">
-        <p className="text-sm text-muted-foreground">
-          © 2026 Govardhan P. ·{" "}
-          <a href="mailto:govardhanchemist@gmail.com" className="underline-offset-4 transition-colors hover:text-primary hover:underline">govardhanchemist@gmail.com</a>
-        </p>
+        <div className="flex items-center gap-3">
+          <ProfileAvatar className="h-10 w-10" glow={false} float={false} />
+          <p className="text-sm text-muted-foreground">
+            © 2026 Govardhan P. ·{" "}
+            <a href="mailto:govardhanchemist@gmail.com" className="underline-offset-4 transition-colors hover:text-primary hover:underline">govardhanchemist@gmail.com</a>
+          </p>
+        </div>
         <SocialLinks />
       </footer>
     </div>
