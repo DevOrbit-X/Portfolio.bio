@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 export const Route = createFileRoute("/hire")({
   head: () => ({ meta: [
-    { title: "Hire Gokul — Let's Build Together" },
+    { title: "Hire Govardhan P — Let's Build Together" },
     { name: "description", content: "Available for freelance and full-time roles. Let's build something remarkable." },
-    { property: "og:title", content: "Hire Gokul" },
+    { property: "og:title", content: "Hire Govardhan P" },
     { property: "og:description", content: "Available for freelance and full-time roles." },
   ] }),
   component: Hire,
@@ -28,6 +28,7 @@ function Hire() {
             </motion.div>
           ))}
         </div>
+        <a href="mailto:govardhanchemist@gmail.com" className="mt-10 inline-block text-sm text-secondary underline underline-offset-4">govardhanchemist@gmail.com</a>
       </div>
     </section>
   );

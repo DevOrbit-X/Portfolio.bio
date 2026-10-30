@@ -6,9 +6,9 @@ import { PageTitle } from "@/components/Shell";
 
 export const Route = createFileRoute("/profiles")({
   head: () => ({ meta: [
-    { title: "Coding Profiles — Gokul" },
-    { name: "description", content: "Gokul on LeetCode, GitHub, SkillRack, HackerRank and Codeforces." },
-    { property: "og:title", content: "Coding Profiles — Gokul" },
+    { title: "Coding Profiles — Govardhan P" },
+    { name: "description", content: "Govardhan P on LeetCode, GitHub, SkillRack, HackerRank and Codeforces." },
+    { property: "og:title", content: "Coding Profiles — Govardhan P" },
     { property: "og:description", content: "Competitive programming and open-source profiles." },
   ] }),
   component: Profiles,
