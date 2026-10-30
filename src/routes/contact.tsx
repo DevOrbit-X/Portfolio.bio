@@ -7,9 +7,9 @@ import { PageTitle } from "@/components/Shell";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({ meta: [
-    { title: "Contact — Gokul" },
-    { name: "description", content: "Send Gokul a message about projects, roles or collaborations." },
-    { property: "og:title", content: "Contact Gokul" },
+    { title: "Contact — Govardhan P" },
+    { name: "description", content: "Send Govardhan P a message about projects, roles or collaborations." },
+    { property: "og:title", content: "Contact Govardhan P" },
     { property: "og:description", content: "Say hello — projects, roles or collaborations." },
   ] }),
   component: Contact,

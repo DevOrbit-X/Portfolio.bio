@@ -9,9 +9,9 @@ const HeroScene = lazy(() => import("@/components/HeroScene"));
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Gokul — Full-Stack Developer Portfolio" },
-      { name: "description", content: "Hi, I'm Gokul — a full-stack developer building fast, animated web experiences." },
-      { property: "og:title", content: "Gokul — Full-Stack Developer" },
+      { title: "Govardhan P — Full-Stack Developer Portfolio" },
+      { name: "description", content: "Hi, I'm Govardhan P — a full-stack developer building fast, animated web experiences." },
+      { property: "og:title", content: "Govardhan P — Full-Stack Developer" },
       { property: "og:description", content: "Animated developer portfolio: projects, skills, articles and more." },
     ],
   }),
@@ -31,8 +31,8 @@ function Index() {
       <section className="grid min-h-[80vh] items-center gap-8 lg:grid-cols-2">
         <div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mb-4 text-sm uppercase tracking-[0.3em] text-secondary">Full-Stack Developer · Creative Coder</motion.p>
-          <h1 className="text-5xl font-extrabold leading-[1.05] sm:text-7xl">
-            {["Hi, I'm", "Gokul."].map((w, i) => (
+          <h1 className="text-4xl font-extrabold leading-[1.05] sm:text-6xl">
+            {["Hi, I'm", "Govardhan P."].map((w, i) => (
               <span key={w} className="block overflow-hidden">
                 <motion.span custom={i} variants={word} initial="hidden" animate="show" className={`block ${i ? "text-gradient" : ""}`}>{w}</motion.span>
               </span>

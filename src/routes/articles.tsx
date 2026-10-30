@@ -5,9 +5,9 @@ import { PageTitle } from "@/components/Shell";
 
 export const Route = createFileRoute("/articles")({
   head: () => ({ meta: [
-    { title: "Featured Articles — Gokul" },
+    { title: "Featured Articles — Govardhan P" },
     { name: "description", content: "Writing on frontend craft, animation and web performance." },
-    { property: "og:title", content: "Featured Articles — Gokul" },
+    { property: "og:title", content: "Featured Articles — Govardhan P" },
     { property: "og:description", content: "Writing on frontend craft, animation and performance." },
   ] }),
   component: Articles,
