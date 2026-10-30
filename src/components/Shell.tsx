@@ -17,11 +17,11 @@ const NAV = [
 ] as const;
 
 export const SOCIALS = [
-  { href: "https://linkedin.com", label: "LinkedIn", Icon: Linkedin },
+  { href: "https://www.linkedin.com/in/govardhan-perumal-60339a34a", label: "LinkedIn", Icon: Linkedin },
   { href: "https://instagram.com", label: "Instagram", Icon: Instagram },
   { href: "https://github.com", label: "GitHub", Icon: Github },
   { href: "https://youtube.com", label: "YouTube", Icon: Youtube },
-  { href: "https://twitter.com", label: "Twitter", Icon: Twitter },
+  { href: "https://x.com/devorbit404", label: "X (Twitter)", Icon: Twitter },
 ];
 
 export function SocialLinks() {
