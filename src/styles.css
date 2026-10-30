@@ -110,3 +110,14 @@ h1,h2,h3 { font-family: var(--font-display); letter-spacing: -0.02em; }
 @keyframes shine { to { background-position: 200% center; } }
 @keyframes blob { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(8vw,-6vh) scale(1.2); } 66% { transform: translate(-6vw,5vh) scale(0.9); } }
 @utility animate-blob { animation: blob 18s ease-in-out infinite; }
+
+/* Organic avatar shape: adjacent radii stay under 100% so the top of the
+   frame keeps a flat tangent region and the head is never clipped. */
+@keyframes blob-morph {
+  0%, 100% { border-radius: 34% 48% 38% 44% / 40% 36% 50% 46%; }
+  33% { border-radius: 44% 38% 46% 36% / 46% 42% 40% 44%; }
+  66% { border-radius: 38% 44% 34% 48% / 36% 42% 44% 40%; }
+}
+@utility blob-shape { animation: blob-morph 16s ease-in-out infinite; border-radius: 34% 48% 38% 44% / 40% 36% 50% 46%; }
+@keyframes float-y { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@utility animate-float { animation: float-y 7s ease-in-out infinite; }
