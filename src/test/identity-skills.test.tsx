@@ -4,11 +4,11 @@ import { Route as SkillsRoute, SKILLS } from "@/routes/skills";
 import { Route as HomeRoute } from "@/routes/index";
 
 type HeadRoute = {
-  head: (ctx?: unknown) => { meta: Array<Record<string, string | undefined>> };
+  options: { head: (ctx?: unknown) => { meta: Array<Record<string, string | undefined>> } };
 };
 
 const metaText = (route: unknown) =>
-  JSON.stringify((route as HeadRoute).head().meta);
+  JSON.stringify((route as HeadRoute).options.head().meta);
 
 describe("Portfolio identity", () => {
   it("names the pages after Govardhan P, not the old placeholder name", () => {
