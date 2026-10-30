@@ -30,7 +30,7 @@ export function Particles() {
       }
       for (let i = 0; i < ps.length; i++) for (let j = i + 1; j < ps.length; j++) {
         const d = Math.hypot(ps[i].x - ps[j].x, ps[i].y - ps[j].y);
-        if (d < 110) { ctx.globalAlpha = (1 - d / 110) * 0.25; ctx.beginPath(); ctx.moveTo(ps[i].x, ps[i].y); ctx.lineTo(ps[j].x, ps[j].y); ctx.stroke(); }
+        if (d < 110) { ctx.globalAlpha = (1 - d / 110) * 0.25; ctx.beginPath(); ctx.moveTo(ps[i]!.x, ps[i]!.y); ctx.lineTo(ps[j]!.x, ps[j]!.y); ctx.stroke(); }
       }
       raf = requestAnimationFrame(tick);
     };
