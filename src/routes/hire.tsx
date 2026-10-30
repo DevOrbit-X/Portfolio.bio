@@ -28,6 +28,7 @@ function Hire() {
             </motion.div>
           ))}
         </div>
+        <a href="mailto:govardhanchemist@gmail.com" className="mt-10 inline-block text-sm text-secondary underline underline-offset-4">govardhanchemist@gmail.com</a>
       </div>
     </section>
   );

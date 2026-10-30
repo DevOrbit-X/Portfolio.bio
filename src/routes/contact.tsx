@@ -37,6 +37,10 @@ function Contact() {
   return (
     <>
       <PageTitle kicker="Say hello" title="Contact" />
+      <p className="-mt-6 mb-8 text-center text-sm text-muted-foreground">
+        Or email me directly at{" "}
+        <a href="mailto:govardhanchemist@gmail.com" className="text-secondary underline underline-offset-4">govardhanchemist@gmail.com</a>
+      </p>
       <div className="glass mx-auto max-w-xl rounded-3xl p-6 sm:p-10">
         <AnimatePresence mode="wait">
           {state === "sent" ? (
